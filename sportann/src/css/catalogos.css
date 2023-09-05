@@ -1,0 +1,20 @@
+.vis-catalogos{
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+}
+.frase-cat{
+   margin-top: 2%;
+   margin-bottom: 2%;
+}
+.frase-cat>a{
+    text-decoration: none;
+    color:#3c33f3;
+    font-size: 30px;
+    margin-left: 2%;
+}
+.container-catalogos-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

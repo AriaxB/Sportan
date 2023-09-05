@@ -1,0 +1,10 @@
+.frase-prod{
+    margin-top: 2%;
+    margin-bottom: 2%;
+ }
+ .frase-prod>a{
+     text-decoration: none;
+     color:#3c33f3;
+     font-size: 30px;
+     margin-left: 6%;
+ }
