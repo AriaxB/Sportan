@@ -27,7 +27,7 @@ nav>.menu{
   width: 60%;
   display: flex;
 }
-nav>.menu>ul>a{
+.linkk{
   font-size: 18px;
   text-decoration: none;
   color:#fff;
@@ -110,4 +110,7 @@ nav>.menu>ul>a:hover{
 .iconos>a>img{
   padding-top: 5%;
   width:30px;
+}
+.menuv>li>.linkoo{
+  color:#3c33f3;
 }

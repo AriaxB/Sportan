@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../css/App.css'
 
-function App() {
+export default function Menuh() {
   return (
     <header className="header">
       <div className="header-top">
@@ -13,22 +13,19 @@ function App() {
     <nav>
       <div className="menu">
         <ul>
-          <a href="">Inicio</a>
+          <a href=""><Link to="/">inicio</Link></a>
         </ul>
         <ul>
-          <a href="">catalogo</a>
+          <a href=""><Link to="/#catalogos">catalogos</Link></a>
         </ul>
         <ul>
-          <a href="">Ofertas</a>
+          <a href=""><Link to="/ofertas">ofertas</Link></a>
         </ul>
         <ul>
-          <a href="#productos">Productos</a>
+          <a href=""><Link to="/#productos">productos</Link></a>
         </ul>
         <ul>
-          <a href="">Nosotros</a>
-        </ul>
-        <ul>
-          <a href="">Sustentacion</a>
+          <a href="/nosotros">Nosotros</a>
         </ul>
       </div>
     </nav>
@@ -41,10 +38,10 @@ function App() {
             </a>
             <ul className="menuv">
               <li>
-                <a href=""><button>iniciar sesion</button></a>
+                <a href=""><button><Link to="/iniciarSesion">iniciar sesion</Link></button></a>
               </li>
               <li>
-                <a href=""><button>registrate</button></a>
+                <a href=""><button><Link to="/preRegistro">registrate</Link></button></a>
               </li>
             </ul>
           </li>
@@ -56,4 +53,3 @@ function App() {
   )
 }
 
-export default App

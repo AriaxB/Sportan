@@ -10,9 +10,11 @@
 }
 .frase-cat>a{
     text-decoration: none;
-    color:#3c33f3;
-    font-size: 30px;
-    margin-left: 2%;
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 45%;
+    margin-right: 45%;
 }
 .container-catalogos-menu{
     display: grid;

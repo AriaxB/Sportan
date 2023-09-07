@@ -5,10 +5,10 @@ import ConCat from "./cat";
 
 export default function ShowCat() {
     return (
-        <div id="catalogos" className="vis-catalogos">
+        <div  id="catalogos" className="vis-catalogos">
             <div className="frase-cat">
                 <a href="#"><strong>catalogos</strong></a></div>
-            <div class="container-catalogos-menu">
+            <div className="container-catalogos-menu">
                 <ConCat
                     nombreCat='Futbol'
                     imageSrc='./src/img/futbol.png'

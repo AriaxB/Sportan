@@ -1,44 +1,33 @@
 import React from "react";
 import '../css/footer.css'
+function Links(props){
+    return(
+        <>
+        <a href=""><strong>{props.link}</strong></a>
+        </>
+    )
+}
 export default function Pie() {
     return (
-        <footer classname="FooterMain">
-            <div classname="container-links2">
-                <a href="#">accesibilidad</a>
-                <a href="#">como cuidamos tus datos</a>
-                <a href="#">Ayuda</a>
+        <div className="footer">
+            <div className="links">
+                <Links
+                    link='accesibilidad'
+                />
+                <Links
+                    link='comunidad'
+                />
+                <Links
+                    link='contactanos'
+                />
             </div>
-            <div classname="redes">
-                siguenos en nuestras redes
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                        </tr>
-                        <tr />
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="">
-                                    <img src="./src/img/facebook.png" alt="" />
-                                </a>
-                            </td>
-                            <td>
-                                <a href="">
-                                    <img src="./src/img/x.png" alt="" />
-                                </a>
-                            </td>
-                            <td>
-                                <a href="">
-                                    <img src="./src/img/instagram.png" alt="" />
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h1>Nuestras redes sociales</h1>
+            <div className="redesSociales">
+                <a href=""><img src="./src/img/facebook.png" alt="" /></a>
+                <a href=""><img src="./src/img/x.png" alt="" /></a>
+                <a href=""><img src="./src/img/instagram.png" alt="" /></a>
             </div>
-        </footer>
+        </div>
 
     )
 }
