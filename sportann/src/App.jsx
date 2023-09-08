@@ -7,6 +7,12 @@ import IniciarSesion from './jsx/iniciarSesion.jsx';
 import Registro from './jsx/preRegister.jsx';
 import FormVendedor from './jsx/formVendedor';
 import FormComprador from './jsx/formComprador';
+{/*import administrador*/}
+import EncabezadoAdmin from './jsx/administrador/inicioAdmin.jsx'
+{/*import comprador*/}
+import EncabezadoComprador from './jsx/comprador/inicioComp.jsx';
+{/*import vendedor*/}
+import EncabezadoVendedor from './jsx/vendedor/inicioVendedor.jsx';
 
 function Header() {
   return (
@@ -82,6 +88,29 @@ function App() {
         </>} />
         <Route path='/formVendedor' element={<FormVendedor />} />
         <Route path='/formComprador' element={<FormComprador />} />
+        {/* rutas vendedor */}
+        <Route path='/inicioVen' element={<><EncabezadoVendedor/> 
+        <Principal /></>} />
+        <Route path='/subirProductoVen' element={<FormComprador />} />
+        <Route path='/verProductoVen' element={<FormComprador />} />
+        <Route path='/nosotrosVen' element={<FormComprador />} />
+        <Route path='/misOrdenesVen' element={<FormComprador />} />
+        <Route path='/ayudaVen' element={<FormComprador />} />
+        {/* rutas comprador */}
+        <Route path='/inicioComp' element={<><EncabezadoComprador/> 
+        <Principal /></>} />
+        <Route path='/ofertasComp' element={<FormComprador />} />
+        <Route path='/productosComp' element={<FormComprador />} />
+        <Route path='/nosotrosComp' element={<FormComprador />} />
+        <Route path='/misOrdenesComp' element={<FormComprador />} />
+        <Route path='/ayudaComp' element={<FormComprador />} />
+        {/* rutas administrador */}
+        <Route path='/inicioAdmin' element={<><EncabezadoAdmin/> 
+        <Principal /></>} />
+        <Route path='/controlUsers' element={<FormComprador />} />
+        <Route path='/controlProductos' element={<FormComprador />} />
+        <Route path='/controlOrdenes' element={<FormComprador />} />
+        <Route path='/controlPqrs' element={<FormComprador />} />
       </Routes>
     </BrowserRouter>
   );
