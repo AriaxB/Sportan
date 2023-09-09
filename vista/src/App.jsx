@@ -29,7 +29,7 @@ function Header() {
               <Link className='linkk' to="/">inicio</Link>
             </ul>
             <ul>
-              <Link className='linkk' to="/">catalogos</Link>
+              <Link  className='linkk' to="/">catalogos</Link>
             </ul>
             <ul>
               <Link className='linkk' to="/ofertas">ofertas</Link>
